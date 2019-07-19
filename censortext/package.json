@@ -1,0 +1,9 @@
+{
+	"author":"Brad",
+	"name":"censorify",
+	"version":"0.1.1",
+	"description":"test",
+	"main":"censortext",
+	"dependencies":{},
+	"engines":{"node":"*"}
+}
