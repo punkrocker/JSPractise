@@ -4,11 +4,11 @@ var customCensoredWords = [];
 function censor(inStr)
 {
 	for (idx in customCensoredWords) {
-		inStr = inStr.replace(censorWords[idx],"abc");
+		inStr = inStr.replace(censorWords[idx],"***");
 	}
 	
 	for (idx in customCensoredWords) {
-		inStr = inStr.replace(customCensoredWords[idx],"efg");
+		inStr = inStr.replace(customCensoredWords[idx],"***");
 	}
 	
 	return inStr;
