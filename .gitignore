@@ -2,39 +2,39 @@
 # Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
 
 # User-specific stuff
-**/.idea/**/workspace.xml
-**/.idea/**/tasks.xml
-**/.idea/**/usage.statistics.xml
-**/.idea/**/dictionaries
-**/.idea/**/shelf
+nodejs/.idea/**/workspace.xml
+nodejs/.idea/**/tasks.xml
+nodejs/.idea/**/usage.statistics.xml
+nodejs/.idea/**/dictionaries
+nodejs/.idea/**/shelf
 
 
 # Sensitive or high-churn files
-**/.idea/**/dataSources/
-**/.idea/**/dataSources.ids
-**/.idea/**/dataSources.local.xml
-**/.idea/**/sqlDataSources.xml
-**/.idea/**/dynamic.xml
-**/.idea/**/uiDesigner.xml
-**/.idea/**/dbnavigator.xml
+nodejs/.idea/**/dataSources/
+nodejs/.idea/**/dataSources.ids
+nodejs/.idea/**/dataSources.local.xml
+nodejs/.idea/**/sqlDataSources.xml
+nodejs/.idea/**/dynamic.xml
+nodejs/.idea/**/uiDesigner.xml
+nodejs/.idea/**/dbnavigator.xml
 
 # Gradle
-**/.idea/**/gradle.xml
-**/.idea/**/libraries
+nodejs/.idea/**/gradle.xml
+nodejs/.idea/**/libraries
 
 # Gradle and Maven with auto-import
 # When using Gradle or Maven with auto-import, you should exclude module files,
 # since they will be recreated, and may cause churn.  Uncomment if using
 # auto-import.
-# **/.idea/modules.xml
-# **/.idea/*.iml
-# **/.idea/modules
+# nodejs/.idea/modules.xml
+# nodejs/.idea/*.iml
+# nodejs/.idea/modules
 
 # CMake
 cmake-build-*/
 
 # Mongo Explorer plugin
-**/.idea/**/mongoSettings.xml
+nodejs/.idea/**/mongoSettings.xml
 
 # File-based project format
 *.iws
@@ -43,13 +43,13 @@ cmake-build-*/
 out/
 
 # mpeltonen/sbt-idea plugin
-**/.idea_modules/
+nodejs/.idea_modules/
 
 # JIRA plugin
 atlassian-ide-plugin.xml
 
 # Cursive Clojure plugin
-**/.idea/replstate.xml
+nodejs/.idea/replstate.xml
 
 # Crashlytics plugin (for Android Studio and IntelliJ)
 com_crashlytics_export_strings.xml
@@ -58,4 +58,4 @@ crashlytics-build.properties
 fabric.properties
 
 # Editor-based Rest Client
-**/.idea/httpRequests
+nodejs/.idea/httpRequests
