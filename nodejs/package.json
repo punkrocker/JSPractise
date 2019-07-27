@@ -1,9 +1,12 @@
 {
-	"author":"Brad",
-	"name":"censorify",
-	"version":"0.1.1",
-	"description":"test",
-	"main":"censortext",
-	"dependencies":{},
-	"engines":{"node":"*"}
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
