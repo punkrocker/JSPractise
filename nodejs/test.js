@@ -1,22 +1,22 @@
-var events = require('events');
-
-function MyObj() {
-    events.EventEmitter.call(this);
-    this.warning = function (msg, msg2) {
-        this.emit("someEvents", msg, msg2);
-    }
+function logCar(logMsg, callback) {
+    process.nextTick(function () {
+        callback(logMsg);
+    });
 }
 
-MyObj.prototype.__proto__ = events.EventEmitter.prototype;
-
-function myCallback(msg, msg2) {
-    console.log('hi');
-    console.log(msg);
-    console.log(msg2);
+var cars = ["Ferrari", "Porsche", "Bugatti"];
+for (var idx in cars) {
+    var message = "Saw a " + cars[idx];
+    logCar(message, function () {
+        console.log("Normal Callback:" + message);
+    });
 }
 
-var myObject = new MyObj();
-myObject.on("someEvents", myCallback);
-
-// myObject.emit("someEvents");
-myObject.warning('hello', 'hahahaha');
+for (var idx in cars) {
+    var message = "Saw a " + cars[idx];
+    (function (msg) {
+        logCar(msg, function () {
+            console.log("Closure Callback:" + msg);
+        });
+    })(message);
+}
