@@ -1,22 +1,20 @@
-function logCar(logMsg, callback) {
-    process.nextTick(function () {
-        callback(logMsg);
-    });
-}
+var cars = ["Car1", "Car2", "Car3"];
 
-var cars = ["Ferrari", "Porsche", "Bugatti"];
-for (var idx in cars) {
-    var message = "Saw a " + cars[idx];
-    logCar(message, function () {
-        console.log("Normal Callback:" + message);
-    });
-}
-
-for (var idx in cars) {
-    var message = "Saw a " + cars[idx];
-    (function (msg) {
-        logCar(msg, function () {
-            console.log("Closure Callback:" + msg);
+function logCar(car, callback) {
+    console.log("Saw a %s", car);
+    if (cars.length) {
+        process.nextTick(function () {
+            callback();
         });
-    })(message);
+    }
 }
+
+function logCars(cars) {
+    var car = cars.pop();
+    logCar(car, function () {
+        logCars(cars);
+    });
+}
+
+logCars(cars)
+
