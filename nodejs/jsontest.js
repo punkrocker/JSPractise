@@ -7,3 +7,5 @@ console.log(buf256.toString());
 buf256[18] = 43;
 console.log(buf256.toString());
 
+let bufUTF8 = new Buffer("Some UTF8 Text \u00b6 \u30c6 \u20ac", "utf8");
+console.log(bufUTF8.toString());
