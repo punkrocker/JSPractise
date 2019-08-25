@@ -16,3 +16,6 @@ console.log(buf256.toString());
 
 sliceBuffer = buf256.slice(0, 5);
 console.log(sliceBuffer.toString());
+
+mergeBuffer = Buffer.concat([sliceBuffer, bufUTF8]);
+console.log(mergeBuffer.toString());
