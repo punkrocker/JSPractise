@@ -13,3 +13,6 @@ console.log(bufUTF8.length);
 
 buf256[2] = bufUTF8[1];
 console.log(buf256.toString());
+
+sliceBuffer = buf256.slice(0, 5);
+console.log(sliceBuffer.toString());
