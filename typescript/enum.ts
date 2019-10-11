@@ -22,3 +22,6 @@ enum Functions {
     a = "bbbb",
     b = 'aaaa'
 }
+
+const nameOfA = OrderStatus[1]
+console.log(nameOfA)
