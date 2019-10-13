@@ -7,3 +7,17 @@ for (let val in arr) {
 for (let val of arr) {
     console.log(val)
 }
+
+function* gene() {
+    let i = 0
+    while (i < 5) {
+        yield i++
+    }
+}
+
+var iterator = gene()
+var i = 0
+while (i < 7) {
+    console.log(iterator.next())
+    i++
+}
