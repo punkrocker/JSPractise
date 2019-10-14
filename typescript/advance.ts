@@ -24,3 +24,9 @@ let x: X = {
     d: "d"
 }
 console.log(x.c)
+
+function twotypes(a: string | number) {
+    console.log(a)
+}
+twotypes("hello")
+twotypes(3)
